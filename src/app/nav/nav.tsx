@@ -55,7 +55,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Box>
-          <Image alt="logo" src={"/red-p-logo.png"} h="100" w="140" />
+          <Image alt="logo" src={"/logo01.png"} h="100" w="140" />
         </Box>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Flex display={{ base: "none", md: "center" }} mt="0" ml={10}>
