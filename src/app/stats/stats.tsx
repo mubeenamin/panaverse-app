@@ -57,22 +57,22 @@ import {
           fontSize={'4xl'}
           py={10}
           fontWeight={'bold'}>
-          Our company is expanding, you could be too.
+          Our Students are expanding, you could be too.
         </chakra.h1>
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
           <StatsCard
-            title={'Users'}
+            title={'Students'}
             stat={'5,000'}
             icon={<BsPerson size={'3em'} />}
           />
           <StatsCard
-            title={'Servers'}
+            title={'Classes'}
             stat={'1,000'}
             icon={<FiServer size={'3em'} />}
           />
           <StatsCard
-            title={'Datacenters'}
-            stat={'7'}
+            title={'Cities'}
+            stat={'4'}
             icon={<GoLocation size={'3em'} />}
           />
         </SimpleGrid>

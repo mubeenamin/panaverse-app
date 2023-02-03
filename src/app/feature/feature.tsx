@@ -20,11 +20,11 @@ export default function WithBackgroundImage() {
       backgroundSize={'cover'}
       backgroundPosition={'center center'}>
       <VStack
-        w={'full'}
+        w={'center'}
         justify={'center'}
         px={useBreakpointValue({ base: 4, md: 8 })}
         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-        <Stack maxW={'2xl'} align={'flex-start'} spacing={6} >
+        <Stack maxW={'lg'} align={'flex-start'} spacing={6} >
           <Text
             color={'white'}
             fontWeight={700}
@@ -34,10 +34,10 @@ export default function WithBackgroundImage() {
           </Text>
           <Stack direction={'row'}>
             <Button
-              bg={'red.400'}
+              bg={'purple.500'}
               rounded={'full'}
               color={'white'}
-              _hover={{ bg: 'red.500' }}>
+              _hover={{ bg: 'red.400' }}>
               Show me more
             </Button>
            
