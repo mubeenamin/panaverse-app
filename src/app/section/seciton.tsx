@@ -14,7 +14,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-
+import "animate.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 export default function CallToActionWithVideo() {
   return (
     <Container maxW={"7xl"}>
@@ -24,7 +25,9 @@ export default function CallToActionWithVideo() {
         py={{ base: 20, md: 28 }}
         direction={{ base: "column", md: "row" }}
       >
+        
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <AnimationOnScroll animateIn="animate__fadeInLeft">
           <Heading
             lineHeight={1.1}
             fontWeight={600}
@@ -49,7 +52,7 @@ export default function CallToActionWithVideo() {
             <br />
             
           </Heading>
-          <Text color={"gray.500"} textAlign="justify">
+          <Text color={"gray.500"} textAlign="justify" mt={"24px"}>
             This curriculum is intended for beginners who want to learn software
             development from the ground up. The first three quarters are shared
             by all specialties and are dedicated to studying Object-Oriented
@@ -75,11 +78,14 @@ export default function CallToActionWithVideo() {
               colorScheme={"red"}
               bg={"red.400"}
               _hover={{ bg: "red.500" }}
+              mt={"24px"}
             >
               Get started
             </Button>
           </Stack>
+          </AnimationOnScroll>
         </Stack>
+        
         <Flex
           flex={1}
           justify={"center"}
@@ -87,6 +93,7 @@ export default function CallToActionWithVideo() {
           position={"relative"}
           w={"full"}
         >
+          <AnimationOnScroll animateIn="animate__fadeInRight">
           <Blob
             w={"100%"}
             h={"120%"}
@@ -127,8 +134,11 @@ export default function CallToActionWithVideo() {
               }
             />
           </Box>
+          </AnimationOnScroll>
         </Flex>
+        
       </Stack>
+
     </Container>
   );
 }
