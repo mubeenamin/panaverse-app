@@ -9,6 +9,7 @@ import {
   Collapse,
   Icon,
   Link,
+  Image,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -22,7 +23,6 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import Logo from "../icon/page";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -54,9 +54,9 @@ export default function WithSubnavigation() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex justify={{ base: "center", md: "start" }}>
-          <Logo />
-        </Flex>
+        <Box>
+          <Image alt="logo" src={"/red-p-logo.png"} h="100" w="140" />
+        </Box>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Flex display={{ base: "none", md: "center" }} mt="0" ml={10}>
             <DesktopNav />
@@ -262,7 +262,7 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Inspiration",
+    label: "Course",
     children: [
       {
         label: "Explore Design Work",
@@ -277,18 +277,11 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    label: "About us",
+    href:"#"
+  },
+  {
+    label: "Contact us",
+    href:"#"
   },
 ];

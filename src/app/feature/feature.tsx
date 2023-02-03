@@ -15,7 +15,7 @@ export default function WithBackgroundImage() {
       w={'full'}
       h={'100vh'}
       backgroundImage={
-        'url(/bg1.jpg)'
+        'url(/bg2.jpg)'
       }
       backgroundSize={'cover'}
       backgroundPosition={'center center'}>
@@ -30,15 +30,14 @@ export default function WithBackgroundImage() {
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-            eiusmod tempor
+            Learn State of the art Technology with us
           </Text>
           <Stack direction={'row'}>
             <Button
-              bg={'blue.400'}
+              bg={'red.400'}
               rounded={'full'}
               color={'white'}
-              _hover={{ bg: 'blue.500' }}>
+              _hover={{ bg: 'red.500' }}>
               Show me more
             </Button>
            

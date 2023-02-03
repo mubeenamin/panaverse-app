@@ -1,5 +1,7 @@
-import ChakraWrapper from "@/component/ChakraWrapper";
 
+import WithSubnavigation from "./nav/nav";
+import ChakraWrapper from "@/component/chakraWrapper";
+import LargeWithLogoCentered from "./footer/footer";
 export default function RootLayout({
   children,
 }: {
@@ -9,7 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <ChakraWrapper> {children}</ChakraWrapper>
+        <ChakraWrapper><WithSubnavigation/>{children}<LargeWithLogoCentered/></ChakraWrapper>
       </body>
     </html>
   );
