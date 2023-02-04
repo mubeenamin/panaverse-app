@@ -1,7 +1,7 @@
 
-import WithSubnavigation from "./nav/nav";
-import ChakraWrapper from "@/component/chakraWrapper";
-import LargeWithLogoCentered from "./footer/footer";
+import WithSubnavigation from "./(component)/nav/nav";
+import ChakraWrapper from "@/app/(component)/chakraWrapper";
+import LargeWithLogoCentered from "./(component)/footer/footer";
 export default function RootLayout({
   children,
 }: {

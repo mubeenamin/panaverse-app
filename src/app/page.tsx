@@ -1,11 +1,11 @@
 "use client";
 import { Inter } from "@next/font/google";
-import WithBackgroundImage from "./feature/feature";
-import BasicStatistics from "./stats/stats";
+import WithBackgroundImage from "./(component)/feature/feature";
+import BasicStatistics from "./(component)/stats/stats";
 import { HStack, Box, Container } from "@chakra-ui/react";
-import CallToActionWithVideo from "./section/seciton";
-import Teachers from "./teachers/teachers";
-import GridBlurredBackdrop from "./student/student";
+import CallToActionWithVideo from "./(component)/section/seciton";
+import Teachers from "./(component)/teachers/teachers";
+import GridBlurredBackdrop from "./(component)/student/student";
 
 const inter = Inter({ subsets: ["latin"] });
 
