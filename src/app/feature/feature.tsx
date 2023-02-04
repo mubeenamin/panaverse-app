@@ -8,7 +8,7 @@ import {
   VStack,
   useBreakpointValue,
 } from '@chakra-ui/react';
-
+import "animate.css";
 
 export default function WithBackgroundImage() {
   return (
@@ -28,6 +28,7 @@ export default function WithBackgroundImage() {
         <Stack maxW={'lg'} align={'flex-start'} spacing={6} >
          
           <Text
+            
             color={'white'}
             fontWeight={700}
             lineHeight={1.2}

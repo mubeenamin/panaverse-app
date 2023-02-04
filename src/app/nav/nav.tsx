@@ -263,18 +263,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Course",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
-      },
-    ],
+    href:"./src/app/courses/course.tsx"
   },
   {
     label: "About us",
