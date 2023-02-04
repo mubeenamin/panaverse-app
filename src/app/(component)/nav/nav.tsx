@@ -263,7 +263,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Course",
-    href:"./src/app/courses/course.tsx"
+    href:"/courses"
   },
   {
     label: "About us",
